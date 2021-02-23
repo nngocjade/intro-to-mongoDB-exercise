@@ -10,9 +10,9 @@
 
   - db.rest.find({borough: "Bronx"}).limit(5).pretty()
 
-- [] 4. display the next 5 restaurants after skipping first 5 which are in the borough Bronx (hint: skip()).
+- [x] 4. display the next 5 restaurants after skipping first 5 which are in the borough Bronx (hint: skip()).
 
-  -
+  - db.rest.find().skip(5).limit(5).pretty()
 
 - [] 5. find the restaurants that achieved a score of more than 80 but less than 100.
 
