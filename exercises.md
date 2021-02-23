@@ -1,8 +1,10 @@
 - [x] 1. display the fields restaurant_id, name, borough and cuisine, but exclude the field \_id for all the documents in the collection restaurant.
 
-db.rest.find({restaurant: 1}, {name: 1}, {borough: 1}, {cuisine: 1}, {\_id: 0}).pretty()
+  - db.rest.find({restaurant: 1}, {name: 1}, {borough: 1}, {cuisine: 1}, {\_id: 0}).pretty()
 
-- [] 2. display all the restaurant which is in the borough Bronx.
+- [x] 2. display all the restaurant which is in the borough Bronx.
+
+  - db.rest.find({borough: "Bronx"}).pretty()
 
 - [] 3. display the first 5 restaurant which is in the borough Bronx (hint: limit()).
 
