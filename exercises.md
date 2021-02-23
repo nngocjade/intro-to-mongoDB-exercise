@@ -14,7 +14,9 @@
 
   - db.rest.find().skip(5).limit(5).pretty()
 
-- [] 5. find the restaurants that achieved a score of more than 80 but less than 100.
+- [x] 5. find the restaurants that achieved a score of more than 80 but less than 100.
+
+  - db.rest.aggregate( {'$project': {'gradeTotal': {         '$sum': '$grades.score'}}}, {'$match': {'gradeTotal': { '$gt': 80, '$lt': 100}}})
 
 - [] 6. find the restaurants that do not prepare any cuisine American and their grade score is more than 70 and latitude less than -65.754168.
 
